@@ -1,0 +1,33 @@
+.sidebar{
+	width:175px;
+	border-color: #fffffff;
+}
+.tab{
+	font-size:12px;
+	height:27px;
+	width:175px;
+	background: #eeeeee;
+	line-height: 27px;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #efefef;
+	border-radius:2px 2px 0px 0px;
+}
+.reorder{
+	margin-left:10px;
+	content: url(tap.png);
+}
+.navto-nav{
+	font-size:12px;
+	height:45px;
+	width:175px;
+	background: #fbfbfb;
+	line-height: 45px;
+	border-width: 0px 1px 1px 1px;
+	border-style: solid;
+	border-color: #efefef;
+}
+.imooc-icon{
+	margin-left:10px;
+	content: url(icon.png);
+}
