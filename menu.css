@@ -3,7 +3,7 @@
 		#dh{
 			position: relative;
 			margin-top: 0px;
-			width: 400px;
+			width:element.style.width;
 			height:40px;
 			border: 0px;
 			background-color: #0099CC;
@@ -14,7 +14,7 @@
 		}
 		a{
 			color: #FFF;
-			width: element.style.width;
+			width: 100px;
 			height: 40px;
 			display: block;
 			text-decoration: none;
