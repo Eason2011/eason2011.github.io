@@ -14,7 +14,7 @@
 		}
 		a{
 			color: #FFF;
-			width: 100px;
+			width: element.style.width;
 			height: 40px;
 			display: block;
 			text-decoration: none;
