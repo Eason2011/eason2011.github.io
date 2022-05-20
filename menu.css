@@ -2,7 +2,7 @@
 .sticky {
     position: sticky;
     top: 0px;
-    height: 40px;
+    height: 60px;
     width: 100%;
     background-color: lightskyblue;
 }
