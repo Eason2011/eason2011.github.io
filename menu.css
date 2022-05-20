@@ -1,55 +1,13 @@
+/* 主要样式，最关键的是position设置为sticky并且top设置成0px */
+.sticky {
+    position: sticky;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: lightskyblue;
+}
 
-		*{margin:0px; padding: 0px; }
-		#dh{
-			position: relative;
-			margin-top: 0px;
-			width:element.style.width;
-			height:80px;
-			border: 0px;
-			background-color: #0099CC;
-		}
-		#dh ul{
-			padding: 0px;
-			
-		}
-		a{
-			color: #FFF;
-			width: 100px;
-			height: 40px;
-			display: block;
-			text-decoration: none;
-			text-align: center;
-			line-height: 40px;
-			font-family: Microsoft Yahei;
-			font-weight: 2px;
-		}
-		#dh {
-			margin:0px auto; 
-		}
-		#dh ul li {
-			list-style: none;
-			float: left;
-		}
-		#dh ul li a:hover{
-			background-color: #6699FF;
-		}
-		#dh ul:hover{
-			display: block;
-		}
-		#dh ul li ul{
-			background-color: #0099CC;
-			position: absolute;
-			display: none;
-		}
-		#dh ul li ul li{
-			float: none;
-			background-color: #6688EE;
-			
-		}
-		#dh ul li ul li a{
-			font-size: 13px;
-			font-weight: 0px;
-		}
-		#dh ul li:hover ul{             /*二级菜单的触发点*/
-			display: block;
-		}
+/* 留出一定空白用的样式，方便测试 */
+.blank {
+    height: 1400px;
+}
