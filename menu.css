@@ -7,7 +7,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ffffff;
+    background-image:url(./menupaper1.jpg);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -26,5 +26,5 @@ li a {
 }
 
 .active {
-    background-color: #4caf50;
+    background-image:url(./menupaper2.jpg);
 }
