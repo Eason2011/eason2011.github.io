@@ -7,7 +7,3 @@
  ul li ul li{ float:none;margin-top:2px; background-color:#eee; } 
  ul li ul{width:90px; position:absolute;display:none;  }
  ul li:hover ul{display:block;}
-
-.blank {
-    height: 1400px;
-}
