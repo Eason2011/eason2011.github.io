@@ -1,9 +1,101 @@
-*{ margin:0px; padding:0px;}
- #menu{ background-color:#eee; width:600px; height:40px; margin:0 auto;}
- ul{ list-style:none;}
- ul li{ line-height:40px; text-align:center; position:relative; float:left;}
- a{ text-decoration:none; color:#000; display:block; width:90px;}
- a:hover{ color:#FFF; background-color:#666;}
- ul li ul li{ float:none;margin-top:2px; background-color:#eee; } 
- ul li ul{width:90px; position:absolute;display:none;  }
- ul li:hover ul{display:block;}
+*{
+    margin: 0;
+    padding: 0;
+    /* 取消li的点点 */
+    list-style: none;
+    font-size: 20px;
+    color: #f4f1de;
+    /* 取消a下的横线 */
+    text-decoration: none;
+}
+body{
+    /* vh是相对单位，这里相当于100% */
+    height: 100vh;
+    /* 横向 */
+    display: flex;
+    /* 下面这两个加起来就可以把盒子放中间 */
+    /* 将弹性 <div> 元素的所有项目的居中对齐： */
+    align-items: center;
+    /* 在容器中央对齐弹性项目： */
+    justify-content: center;
+ 
+    /* 渐变 --right前面有个to*/
+    background: linear-gradient(to right,rgb(95, 255, 220),rgb(178, 209, 255));
+}
+ 
+.shell{
+    display: flex;
+    justify-content:center;
+}
+ 
+.button,.portrait{
+    background-color: #50536e;
+    width: 180px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    /* 过渡 */
+    transition: 0.3s;
+    /* 鼠标放上会变小手：可点击样式 */
+    /* 可以没有，因为已经把它加上a标签了 */
+    /* cursor: pointer; */
+}
+/* 伪类标签 */
+.portrait::before{
+    /* 在每个 <portrait> 元素的内容之前插入新内容： */
+    content: " ";
+ 
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ 
+    /* 位置 */
+    transform: translate(30px,-30px);
+    /* 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+    背景图像的某些部分也许无法显示在背景定位区域中。 */
+    background-size: cover;
+ 
+    background-image: url(../textx-xiala/image/1.jpg);
+ 
+    border: 10px solid #fff;
+}
+.information{
+    width: 220px;
+    background-color: #e07a5f;
+    border-radius: 10px;
+    transform: translate(-20px,-200px);
+    padding: 20px 0;
+    line-height: 0;
+    height: 0;
+    transform: 0.3s;
+    /* 隐藏 */
+    opacity: 0;
+}
+.button:hover{
+    background-color: #d15139;
+}
+.button li:hover{
+    background-color: #e07a5f;
+}
+.button ul li{
+    height: 0;
+    transform: 0.2s;
+    opacity: 0;
+    transform: translateY(-65px);
+    background-color: #e07a5f;
+}
+ 
+.button:hover li{
+    height: 70px;
+    /* 显示 */
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+.portrait:hover .information{
+    opacity: 1;
+    line-height: 70px;
+    transform: translate(-20px,-10px);
+    height: auto;
+}
