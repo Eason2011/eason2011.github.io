@@ -7,7 +7,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image:url(./menupaper1.jpg);
+    background-image: url(https://eason2011.github.io/menupaper1.jpg);
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -24,7 +24,6 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 .active {
-    background-color:#A9B8E4;
+    background-color: #A9B8E4;
 }
