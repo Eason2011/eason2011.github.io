@@ -26,9 +26,9 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #fff0;
 }
 
 .active {
-    background-color: #ffffff;
+    background-color: #0000;
 }
