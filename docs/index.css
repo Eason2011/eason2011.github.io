@@ -1,0 +1,13 @@
+#pp2{
+    width:100%;
+    height:500px;
+    animation:switch 15s infinite;
+    }
+    #pp2>img{
+    float:center;
+    }
+    #pp1{
+    height:340px;
+    width:100%;
+    overflow: hidden;
+    }
